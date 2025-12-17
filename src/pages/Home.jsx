@@ -5,7 +5,8 @@ import { Autoplay, Pagination } from 'swiper/modules'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
-export default function Home(){
+export default function Home() {
+
   const [plants, setPlants] = useState([])
 
   useEffect(()=>{
@@ -126,6 +127,7 @@ export default function Home(){
                 nextExt = 0
                 nextBase = idxBase + 1
               }
+              
               if(nextBase >= baseCandidates.length){
                 img.src = '/avatar.svg'
                 img.removeAttribute('data-base-idx')
