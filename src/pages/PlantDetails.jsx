@@ -46,4 +46,15 @@ export default function PlantDetails(){
         </div>
       </div>
 
-    
+      <form className="form" onSubmit={handleBook}>
+        <h3>Book Consultation</h3>
+        <label>Name</label>
+        <input value={name} onChange={e=>setName(e.target.value)} required />
+        <label>Email</label>
+        <input value={email} onChange={e=>setEmail(e.target.value)} type="email" required />
+        <button className="btn" type="submit">Book Now</button>
+        {msg && <p className="success">{msg}</p>}
+      </form>
+    </div>
+  )
+}
