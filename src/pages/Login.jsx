@@ -3,7 +3,7 @@ import { toast } from 'react-toastify'
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useAuth } from '../context/AuthContext.jsx'
 
-export default function Login(){
+export default function Login() {
   const [email,setEmail] = useState('')
   const [password,setPassword] = useState('')
   const [show,setShow] = useState(false)
@@ -17,9 +17,11 @@ export default function Login(){
     e.preventDefault()
     setError('')
     try{
+
       await login(email,password)
       toast.success('Logged in successfully', { position:'top-center', autoClose: 1200 })
       navigate(from,{replace:true})
+      
     }catch(err){
       setError(err.message)
       toast.error(err.message || 'Login failed', { position:'top-center', autoClose: 1800 })
