@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import { toast } from 'react-toastify'
 import { useParams } from 'react-router-dom'
 
-export default function PlantDetails(){
+export default function PlantDetails() {
   const { id } = useParams()
   const [plant,setPlant] = useState(null)
   const [name,setName] = useState('')
