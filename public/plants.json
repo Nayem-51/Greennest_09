@@ -1,0 +1,74 @@
+[
+  {
+    "plantId": 1,
+    "plantName": "Snake Plant",
+    "category": "Air Purifier",
+    "price": 18,
+    "rating": 4.8,
+    "availableStock": 10,
+    "careLevel": "Easy",
+    "description": "A hardy plant that purifies indoor air and thrives in low light.",
+    "image": "/images/SnakePlant.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 2,
+    "plantName": "Monstera Deliciosa",
+    "category": "Decor",
+    "price": 35,
+    "rating": 4.9,
+    "availableStock": 8,
+    "careLevel": "Medium",
+    "description": "Iconic split leaves, loves bright indirect light and weekly watering.",
+    "image": "/images/MonsteraDeliciosa.webp",
+    "providerName": "Leaf & Loft"
+  },
+  {
+    "plantId": 3,
+    "plantName": "Pothos",
+    "category": "Low-Light",
+    "price": 14,
+    "rating": 4.7,
+    "availableStock": 20,
+    "careLevel": "Easy",
+    "description": "Fast-growing vine, perfect for shelves and hanging planters.",
+    "image": "/images/Pothos.jpg",
+    "providerName": "UrbanGreen Studio"
+  },
+  {
+    "plantId": 4,
+    "plantName": "ZZ Plant",
+    "category": "Drought-Tolerant",
+    "price": 22,
+    "rating": 4.6,
+    "availableStock": 15,
+    "careLevel": "Easy",
+    "description": "Glossy leaves, thrives on neglect, great for offices.",
+    "image": "/images/ZZPlant.jpg",
+    "providerName": "Root & Room"
+  },
+  {
+    "plantId": 5,
+    "plantName": "Peace Lily",
+    "category": "Blooming",
+    "price": 28,
+    "rating": 4.5,
+    "availableStock": 9,
+    "careLevel": "Medium",
+    "description": "Elegant white blooms, prefers moist soil and filtered light.",
+    "image": "/images/PeaceLily.jpg",
+    "providerName": "Leaf & Loft"
+  },
+  {
+    "plantId": 6,
+    "plantName": "Rubber Plant",
+    "category": "Statement",
+    "price": 32,
+    "rating": 4.6,
+    "availableStock": 12,
+    "careLevel": "Medium",
+    "description": "Sturdy, glossy leaves, enjoys bright light and occasional watering.",
+    "image": "/images/RubberPlant.webp",
+    "providerName": "Root & Room"
+  }
+]
