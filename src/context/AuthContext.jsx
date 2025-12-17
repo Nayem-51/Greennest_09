@@ -3,9 +3,11 @@ import { onAuthStateChanged, signInWithEmailAndPassword, createUserWithEmailAndP
 import { auth } from '../firebase/firebase.config.js'
 
 const AuthContext = createContext(null)
+
 export const useAuth = ()=> useContext(AuthContext)
 
-export default function AuthProvider({ children }){
+export default function AuthProvider({ children }) {
+
   const [user,setUser] = useState(null)
   const [loading,setLoading] = useState(true)
 
@@ -22,6 +24,7 @@ export default function AuthProvider({ children }){
   const updateUserProfile = (data)=> updateProfile(auth.currentUser,data)
 
   const value = { user, login, signup, resetPassword, googleSignIn, logout, updateUserProfile }
+
 
   if(loading) return <div className="loading">Loading...</div>
   return <AuthContext.Provider value={value}>{children}</AuthContext.Provider>
